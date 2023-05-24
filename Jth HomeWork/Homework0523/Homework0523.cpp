@@ -24,7 +24,7 @@ public:
     int ATT =10;
 };
 
-//  [H][H][H][H][][][][] //  [A][A][A][A][][][][]
+//  [H][H][H][H] [A][A][A][A] //  [T][T][T][T]
 void TestFunction(Player _Newplayer, int _Test)
 {
     // 이것도 확인해보세요.

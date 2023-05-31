@@ -16,7 +16,6 @@
 //         이미 보여준 코드 이미 array에서 해결은 한거에요.
 
 // 숙제1 => 템플릿으로 바꾸세요.
-
 template<typename DataType>
 
 class HVector
@@ -25,16 +24,16 @@ public:
 
 	HVector& operator=(const HVector& _Other)
 	{
-		if (this != &_Other) // 자기 자신과의 할당인지 확인
+		if (this != &_Other) 
 		{
-			// 이전 메모리 해제
+			
 			if (ArrPtr != nullptr)
 			{
 				delete[] ArrPtr;
 				ArrPtr = nullptr;
 			}
 
-			// 새로운 메모리 할당 및 복사
+			
 			sizeValue = _Other.sizeValue;
 			capacityValue = _Other.capacityValue;
 			ArrPtr = new DataType[capacityValue];
@@ -210,4 +209,5 @@ int main()
 
 
 }
+
 
